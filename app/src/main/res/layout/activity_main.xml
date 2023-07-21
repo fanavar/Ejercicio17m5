@@ -8,21 +8,25 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="271dp"
-        android:layout_height="260dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="306dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/captura" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="414dp"
+        android:layout_height="51dp"
+        android:background="#FFFFFF"
         android:backgroundTint="#A14E4E"
+        android:gravity="center"
         android:text="Easy Coin Coverter "
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,14 +50,15 @@
         app:layout_constraintTop_toTopOf="@+id/transformar"
         app:layout_constraintVertical_bias="0.433" />
 
-    <EditText
+    <TextView
         android:id="@+id/transformar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="48dp"
+        android:hint="Convertir en:"
         android:minHeight="48dp"
-        android:text="Convertir en:"
+        android:textColorHint="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/moneda" />
 
@@ -92,6 +97,7 @@
         android:ems="10"
         android:hint="Cantidad y divisa"
         android:inputType="text"
+        android:textColorHint="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
